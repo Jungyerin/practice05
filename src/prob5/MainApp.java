@@ -1,10 +1,12 @@
 package prob5;
 
+import java.util.Stack;
+
 public class MainApp {
 
 	public static void main(String[] args) {
 		try {
-			Stack<String> stack = new MyStack(3);
+			MyStack stack = new MyStack(3);
 			stack.push("Hello");
 			stack.push("World");
 			stack.push("!!!");
@@ -22,11 +24,10 @@ public class MainApp {
 
 			System.out.println(stack.pop());
 			System.out.println(stack.pop());
-			
+
 		} catch (MyStackException ex) {
-			System.out.println( ex );
+			System.out.println(ex);
 		}
 
 	}
-
 }
