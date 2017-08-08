@@ -2,7 +2,7 @@ package prob5;
 
 import com.sun.xml.internal.ws.api.pipe.ThrowableContainerPropertySet;
 
-public class MyStack {
+public class MyStack<T>{
 	private int top;
 	private String[] buffer;
 
